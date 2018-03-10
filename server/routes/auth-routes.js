@@ -1,12 +1,9 @@
 const express = require('express');
 const User = require('../models/User');
-const Todo = require('../models/Todo');
-const Project = require('../models/Project');
-const Milestone = require('../models/Milestone');
-const Contact = require('../models/Contact');
 const mongoose = require('mongoose');
 const passport = require('passport');
-const db_url = process.env.MONGODB_URI || 'mongodb://dbconfig:icpmdb1@ds013216.mlab.com:13216/icpm'
+const config = require('../../config');
+const db_url = process.env.MONGODB_URI || config.dbUri
 mongoose.connect(db_url);
 // const validator = require('validator');
 

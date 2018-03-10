@@ -13,9 +13,4 @@ module.exports.connect = (uri) => {
 
     // load models
     require('./User');
-    require('./Todo');
-    require('./Project');
-    require('./Milestone');
-    require('./Contact');
-    require('./Task');
 };

@@ -1,33 +1,17 @@
 import React, { Component } from 'react';
 import '../css/App.css';
-import HomePage from './Dashboard/HomePage.js'
-import ProjectsPage from './Projects/ProjectsPage.js'
-import NewProjectPage from './Projects/NewProjectPage.js'
-import ViewProjectPage from './Projects/ViewProject.js'
-import TasksPage from './Todos/TasksPage.js'
-import ResourcesPage from './Resources/ResourcesPage.js'
-import SettingsPage from './Profile/SettingsPage.js'
+import HomePage from './HomePage.js'
+// import DashboardPage from './DashboardPage.js'
+// import AdminPage from './Admin'
+import NotFound from './NotFound.js'
 import LoginPage from './Auth/Login.js'
 import SignUpPage from './Auth/SignUp.js'
-import Email from './Projects/EmailTest.js'
-import NotFound from './NotFound.js'
+// import IndividualUserView from './Admin/IndividualUserView'
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Route, withRouter, Switch, Redirect } from "react-router-dom";
 import Auth from '../tools/Auth';
-// const jwt = Auth.getToken();
 
-// const isLoggedIn = () => {
-//   if (jwt != null) {
-//       if ((jwt.exp * 1000) >= Date.now()) {
-//           return true;
-//       } else {
-//           localStorage.removeItem('jwt');
-//           localStorage.removeItem('auth_token');
-//       }
-//   }
-//   return false;
-// }
-
+// eslint-disable-next-line
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
@@ -62,14 +46,9 @@ class App extends Component {
           <div>
             <Switch location={this.props.location}>
               <Route path="/" exact component={HomePage} />
-              <PrivateRoute path="/dashboard" exact component={HomePage} />
-              <PrivateRoute path="/projects" exact component={ProjectsPage} />
-              <PrivateRoute path="/projects/new" exact component={NewProjectPage} />
-              <PrivateRoute path="/projects/:project_id" exact component={ViewProjectPage} />
-              <PrivateRoute path="/tasks" exact component={TasksPage} />
-              <PrivateRoute path="/resources" exact component={ResourcesPage} />
-              <PrivateRoute path="/settings" exact component={SettingsPage} />
-              <PrivateRoute path="/email_test" exact component={Email} />
+              {/* <Route path="/dashboard" exact component={DashboardPage} /> */}
+              {/* <Route path="/admin" exact component={AdminPage} /> */}
+              {/* <Route path="/users/:id" exact component={IndividualUserView} /> */}
               <Route path="/signup" exact component={SignUpPage} />
               <Route path="/login" exact component={LoginPage} />
               <Route component={NotFound} />

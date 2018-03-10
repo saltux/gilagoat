@@ -14,11 +14,7 @@ var UsersSchema = new Schema({
         index: { unique: true }
     },
     password: String,
-    projects: [{ type: Schema.Types.ObjectId, ref: 'Project' }],
-    todos: [{ type: Schema.Types.ObjectId, ref: 'Todo' }],
-    team: String,
-    avatar_url: String
-
+    role: String,
 });
 
 //compare password with whats in the db

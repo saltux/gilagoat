@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import Logo from '../../img/logo.png';
 import SignUpForm from './SignUpForm'
 import { connect } from 'react-redux';
 import { handleSignup, resetErrors } from '../../actions/signup_index';
 import { handleLogin } from '../../actions/login_index';
-import LoadIcon from '../../img/panda-load.gif'
 
 
 class SignUpPage extends Component {
@@ -42,14 +40,13 @@ class SignUpPage extends Component {
                         height: '100vh',
                         flexFlow: 'column'
                     }}>
-                        <img src={LoadIcon} alt="" />
                         <br />
                         Hey oh! Hang on a sec...
                         </div>
                     :
                     <div className="signup-container">
                         <div className="signin-logo">
-                            <img src={Logo} alt="" style={{ width: '100%' }} />
+                            {/* <img src={Logo} alt="" style={{ width: '100%' }} /> */}
                         </div>
                         <SignUpForm onSubmit={this.handleFormSubmit} />
                     </div>

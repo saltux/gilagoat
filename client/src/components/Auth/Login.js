@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import Logo from '../../img/logo.png';
 import LoginForm from './LoginForm'
 import { connect } from 'react-redux';
 import { handleLogin, resetErrors } from '../../actions/login_index';
-import LoadIcon from '../../img/panda-load.gif'
 
 class LoginPage extends Component {
 
@@ -27,14 +25,14 @@ class LoginPage extends Component {
                         height: '100vh',
                         flexFlow: 'column'
                     }}>
-                        <img src={LoadIcon} alt="" />
+                    
                         <br />
                         Welcome Back! Getting your things......
                         </div>
                     :
                     <div className="signup-container">
                         <div className="signin-logo">
-                            <img src={Logo} alt="" style={{ width: '100%' }} />
+                            {/* <img src={Logo} alt="" style={{ width: '100%' }} /> */}
                         </div>
                         <LoginForm onSubmit={this.handleFormSubmit} />
                     </div>

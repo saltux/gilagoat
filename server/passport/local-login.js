@@ -41,8 +41,7 @@ module.exports = new PassportLocalStrategy({
         email: user.email,
         first_name: user.first_name,
         last_name: user.last_name,
-        team: user.team,
-        avatar_url: user.avatar_url,
+        role: user.role,
         id: user._id    
       };
 
@@ -52,8 +51,7 @@ module.exports = new PassportLocalStrategy({
         email: user.email,
         first_name: user.first_name,
         last_name: user.last_name,
-        team: user.team,
-        avatar_url: user.avatar_url,
+        role: user.role,
         id: user._id    
       };
 

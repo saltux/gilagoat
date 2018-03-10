@@ -86,12 +86,11 @@ const SignupForm = props => {
                 </div>
                 <Field name="email" type="email" component={renderField} label="Email" />
                 <div className="form-group">
-                    <label htmlFor="team">Team</label>
-                    <Field name="team" component="select">
+                    <label htmlFor="role">Role</label>
+                    <Field name="role" component="select">
                         <option />
-                        <option value="higher_ed">Higher Ed</option>
-                        <option value="k12">K12</option>
-                        <option value="remote_admin">Remote Admin</option>
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
                     </Field>
                 </div>
                 <Field name="password" type="password" component={renderField} label="Password" />

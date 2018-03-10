@@ -1,5 +1,6 @@
+# Gillagoat 
 
-## Installation 
+## Installation
 
 1. Install all dependencies from the server level `yarn install`
 

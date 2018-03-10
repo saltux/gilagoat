@@ -18,7 +18,7 @@ export const handleLogin = (values) => {
                     payload: "You are now logged in."
                 })
                 setTimeout(() => {
-                    dispatch(push('/dashboard'))                    
+                    dispatch(push('/'))                    
                 }, 1500);
             }
             else {
