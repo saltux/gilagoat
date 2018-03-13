@@ -24,7 +24,8 @@ class LoginPage extends Component {
                         alignItems: 'center',
                         justifyContent: 'center',
                         height: '100vh',
-                        flexFlow: 'column'
+                        flexFlow: 'column',
+                        background: 'white'
                     }}>
 
                         <br />

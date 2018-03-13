@@ -10,12 +10,12 @@ const validate = values => {
     const errors = {}
     if (!values.first_name) {
         if (!values.email) {
-            errors.email = 'Please enter an email address'
+            errors.email = '* Please enter an email address'
         } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-            errors.email = 'Invalid email address'
+            errors.email = '* Invalid email address'
         }
         if (!values.password) {
-            errors.password = 'Please enter a password'
+            errors.password = '* Please enter a password'
         }
         return errors
     }
@@ -55,7 +55,7 @@ const SignupForm = props => {
                     <div style={{ width: '100%', marginTop: '50px', display: 'flex', justifyContent: 'center' }}>
                         <button type="submit" className="login-form-button" disabled={submitting}>
                             <span>Login</span>
-                            <img src={Next} style={{ height: '20px', position: 'relative', left: '75px' }} alt="next"/>
+                            <img src={Next} style={{ height: '20px', position: 'relative', left: '50px' }} alt="next"/>
                         </button>
                     </div>
                 </form>
