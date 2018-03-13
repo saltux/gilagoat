@@ -1,6 +1,9 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
 import { Link } from "react-router-dom";
+import User from '../../img/user.svg'
+import Lock from '../../img/locked.svg'
+import Next from '../../img/next.svg'
 
 
 const validate = values => {
@@ -30,8 +33,8 @@ const renderField = ({
     meta: { touched, error, warning }
 }) => (
         <div className="form-group">
-            <label>{label}</label>
-            <input {...input} type={type} />
+            <label className='login-label'>{label}</label>
+            <input {...input} type={type} className='login-form-field' />
             {touched &&
                 ((error && <span className="form-error">{error}</span>) ||
                     (warning && <span className="form-warning">{warning}</span>))}
@@ -42,21 +45,22 @@ const renderField = ({
 const SignupForm = props => {
     const { handleSubmit, submitting } = props
     return (
-        <div style={{textAlign: 'center'}}>
+        <div className='login'>
             <div className="signin-form">
-                <form onSubmit={handleSubmit} style={{ width: '85%' }}>
+                <form onSubmit={handleSubmit} className="login-form">
 
-                    <Field name="email" type="email" component={renderField} label="Email" />
-
-                    <Field name="password" type="password" component={renderField} label="Password" />
-                    <div>
-                        <button type="submit" className="form-button" disabled={submitting}>
-                            Login
-                    </button>
+                    <Field name="email" type="email" component={renderField} label={<img src={User} style={{ height: '40px' }} alt="user"/>} />
+                    <hr className="form-divider" />
+                    <Field name="password" type="password" component={renderField} label={<img src={Lock} style={{ height: '40px' }}  alt="lock"/>} />
+                    <div style={{ width: '100%', marginTop: '50px', display: 'flex', justifyContent: 'center' }}>
+                        <button type="submit" className="login-form-button" disabled={submitting}>
+                            <span>Login</span>
+                            <img src={Next} style={{ height: '20px', position: 'relative', left: '75px' }} alt="next"/>
+                        </button>
                     </div>
                 </form>
             </div>
-            <Link to='/signup' className="register-link"> Need an account? Click here to sign up! </Link>
+            <Link to='/signup' className="register-link"> Need help logging in? Click Here</Link>
         </div>
     )
 }

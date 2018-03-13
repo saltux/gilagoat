@@ -1,7 +1,7 @@
 import React from 'react'
-import { Modal, Grid } from 'semantic-ui-react'
+import { Modal } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
-import GlobalModalCard from './GlobalModalCard'
+// import GlobalModalCard from './GlobalModalCard'
 import NavLogo from '../img/nav-logo.png'
 
 
