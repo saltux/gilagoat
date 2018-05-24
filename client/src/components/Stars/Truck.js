@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Truck from "../../img/truck-1.png";
+import Truck from "../../img/lake_trailer.png";
 
 class TruckLayer extends Component {
     render() {
         return (
-            <img src={Truck} alt="" style={{ width: '700px' }}/>
+            <img src={Truck} alt=""/>
         )
     }
 }
