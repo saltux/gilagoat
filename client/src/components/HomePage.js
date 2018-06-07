@@ -69,7 +69,7 @@ class HomePage extends Component {
           <Parallax.Layer
             className='hide-on-mobile'
             offset={0.6}
-            speed={0.1}
+            speed={0.05}
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}
             onClick={() => this.refs.parallax.scrollTo(1)}>
             <StarsTreeLayer />
@@ -122,7 +122,7 @@ class HomePage extends Component {
         <Parallax.Layer
           className='hide-on-mobile'
           offset={1.29}
-          speed={0.1}
+          speed={0.05}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}
           onClick={() => this.refs.parallax.scrollTo(2)}>
           <CactusLayer />
@@ -189,7 +189,7 @@ class HomePage extends Component {
         <Parallax.Layer
           className='hide-on-mobile'
           offset={1.85}
-          speed={0.1}
+          speed={0.05}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}
           onClick={() => this.refs.parallax.scrollTo(3)}>
           <JungleBottomVine />

@@ -30,7 +30,11 @@ var allowedOrigins = [
     'http://localhost:3000',
     'gilagoat.herokuapp.com',
     'https://gilagoat.herokuapp.com',
-    'http://gilagoat.herokuapp.com'
+    'http://gilagoat.herokuapp.com',
+    'http://gilagoat.com',
+    'http://www.gilagoat.com',
+    'https://gilagoat.com',
+    'https://www.gilagoat.com'
 ];
 app.use(cors({
     origin: function (origin, callback) {
