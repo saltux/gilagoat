@@ -61,7 +61,7 @@ img.nav-icon-img {
   margin-bottom: 10px;
 }
 
-form.contact-form {
+.contact-form {
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
@@ -220,6 +220,17 @@ a.register-link:hover {
   color: rgb(0, 0, 0);
 }
 
+.contact-input {
+  padding: 10px;
+  width: 600px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Mobile */
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
@@ -231,6 +242,13 @@ a.register-link:hover {
   }
   .login {
     width: 80%;
+  }
+
+  .contact-input {
+    padding: 10px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
