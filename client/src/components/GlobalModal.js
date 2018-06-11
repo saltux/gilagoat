@@ -1,6 +1,5 @@
 import React from 'react'
 import { Modal } from 'semantic-ui-react'
-import { Link } from 'react-router-dom'
 // import GlobalModalCard from './GlobalModalCard'
 import NavLogo from '../img/nav-logo.png'
 import axios from 'axios';
@@ -18,7 +17,7 @@ class GlobalModal extends React.Component {
   }
 
   handleSubmit = () => {
-    const { name, email, message, messageLoading } = this.state;
+    const { name, email, message } = this.state;
     this.setState({ messageLoading: true }, () => {
       axios.post(`${API_URL}/api/send-message`, { name, email, message })
         .then(response => {
