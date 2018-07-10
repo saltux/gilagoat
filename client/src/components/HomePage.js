@@ -19,6 +19,7 @@ import DesertTruckLayer from './Desert/Truck'
 import CactusLayer from './Desert/cactus'
 import JungleOuterLayer from './Jungle/JungleOuterLayer'
 import MobileBg from '../img/mobile-bg.png';
+import WhiteLogo from '../img/logo-white.png'
 
 
 
@@ -37,7 +38,7 @@ class HomePage extends Component {
     return (
       <Parallax ref='parallax' pages={4}>
 
-         
+
         {/* Mobile  */}
         <Parallax.Layer offset={0} speed={0} factor={4.1} style={{ backgroundImage: `url(${MobileBg})`, backgroundSize: 'cover', backgroundPositionX: 'center' }} className='hide-on-med-and-up' />
         <Parallax.Layer offset={0} speed={0} className='hide-on-med-and-up' onClick={() => this.refs.parallax.scrollTo(1)} />
@@ -56,6 +57,13 @@ class HomePage extends Component {
           offset={0}
           speed={0}
         >
+          <div className="home-page-text-container">
+            <div className="page-1-logo">
+              <img src={WhiteLogo} alt="" width="100%" />
+            </div>
+            <div className="page1-main-text">LEGENDARY ADVENTURE TRAILERS</div>
+            <div className="page-1-secondary-text">Stop Dreaming. Start Doing.</div>
+          </div>
           {/* stuff for stars page */}
           <Parallax.Layer
             className='hide-on-mobile'
@@ -63,7 +71,7 @@ class HomePage extends Component {
             speed={-0.45}
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}
             onClick={() => this.refs.parallax.scrollTo(1)}>
-              <StarsLayer />
+            <StarsLayer />
           </Parallax.Layer>
 
           <Parallax.Layer
@@ -147,7 +155,7 @@ class HomePage extends Component {
           speed={0}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           onClick={() => this.refs.parallax.scrollTo(3)}>
-            <JungleTruckLayer />        
+          <JungleTruckLayer />
         </Parallax.Layer>
 
         <Parallax.Layer
@@ -207,6 +215,31 @@ class HomePage extends Component {
           onClick={() => this.refs.parallax.scrollTo(0)}>
 
         </Parallax.Layer>
+        <Parallax.Layer
+          className='hide-on-mobile'
+          offset={3}
+          speed={0}
+          style={styles}
+          onClick={() => this.refs.parallax.scrollTo(0)}>
+          <div className="pricing">
+            <div className="price-container">
+              <div className="price-title">
+                <div className="cross-through1"></div>
+                <div className="cross-through2"></div>
+                AVAILABLE NOW
+                <span className="price"> $14,995.00</span>
+              </div>
+            </div>
+
+            <div className="price-container">
+              <div className="price-title" style={{ color: '#CB2805' }}>
+                FOR A LIMITED TIME
+                <span className="price" style={{ color: 'white' }}> $9,999.00</span>
+              </div>
+            </div>
+
+          </div>
+        </Parallax.Layer>
 
         <Parallax.Layer
           className='hide-on-mobile'
@@ -216,6 +249,7 @@ class HomePage extends Component {
           onClick={() => this.refs.parallax.scrollTo(3)}>
           <GarageTruckLayer />
         </Parallax.Layer>
+
 
         <Parallax.Layer
           className='hide-on-mobile'

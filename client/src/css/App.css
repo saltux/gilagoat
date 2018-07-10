@@ -231,6 +231,107 @@ a.register-link:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
+.price-container {
+  height: 330px;
+  background-color: black;
+  border: solid 5px #CB2805;
+  border-bottom: #CB2805 solid 55px;
+  border-top: none;
+  width: 200px;
+  clip-path: polygon(50% 100%, 100% 85%, 100% 0, 0 0, 0 85%);
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+}
+
+.price-title {
+  color: white;
+  line-height: 1.2;
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.cross-through1 {
+  position: relative;
+  height: 5px;
+  background-color: #CB2805;
+  z-index: 9999;
+  top: 93px;
+  transform: rotate(30deg);
+  width: 75%;
+  margin: 0 auto;
+}
+
+.cross-through2 {
+  position: relative;
+  height: 5px;
+  background-color: #CB2805;
+  z-index: 1;
+  top: 89px;
+  transform: rotate(-30deg);
+  width: 75%;
+  margin: 0 auto;
+}
+
+.home-page-text-container {
+  height: 400px;
+  z-index: 9999;
+  position: absolute;
+  width: 80%;
+  /* margin: 0 auto; */
+  left: unset;
+  /* right: auto; */
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 20%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.page-1-logo {
+  text-align: right;
+  width: 180px;
+  margin-left: auto;
+  margin-right: 35%;
+}
+
+.page1-main-text {
+  color: white;
+  font-family: 'Arial Black', sans-serif;
+  font-size: 30px;
+  position: absolute;
+  text-align: right;
+  margin-right: 190px;
+  margin-top: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  left: 46%;
+}
+
+.page-1-secondary-text {
+  color: white;
+  position: absolute;
+  left: 60%;
+  font-size: 27px;
+  margin-top: 13px;
+  font-family: 'Century Gothic', sans-serif;
+  top: 55px;
+  font-weight: 100;
+}
+
 /* Mobile */
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
@@ -243,7 +344,6 @@ a.register-link:hover {
   .login {
     width: 80%;
   }
-
   .contact-input {
     padding: 10px;
     width: 300px;
