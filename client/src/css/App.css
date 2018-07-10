@@ -332,6 +332,59 @@ a.register-link:hover {
   font-weight: 100;
 }
 
+.page-2-text {
+  width: 100%;
+}
+
+.page-2-title {
+  color: white;
+  font-family: 'Arial Black', sans-serif;
+  font-size: 40px;
+  position: relative;
+  left: 50%;
+  bottom: 220px;
+  letter-spacing: 1px;
+  background: #00000085;
+  height: 60px;
+  line-height: initial;
+  width: 100%;
+  padding-left: 30px;
+}
+
+.page-2-text1 {
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 25px;
+  position: relative;
+  right: 23%;
+  bottom: 215px;
+  letter-spacing: 1px;
+  background: #00000085;
+  height: 45px;
+  line-height: 2;
+  width: 100%;
+  padding-right: 30px;
+  text-align: right;
+  font-weight: 100;
+}
+
+.page-2-text2 {
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 46%;
+  bottom: 215px;
+  letter-spacing: 1px;
+  background: #00000085;
+  height: 34px;
+  line-height: 2;
+  width: 100%;
+  padding-left: 30px;
+  font-weight: 100;
+  margin: 5px 0;
+}
+
 /* Mobile */
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {

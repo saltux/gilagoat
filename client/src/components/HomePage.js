@@ -112,10 +112,35 @@ class HomePage extends Component {
         <Parallax.Layer
           className='hide-on-mobile'
           offset={1}
-          speed={-0.1}
+          speed={0}
           style={styles}
           onClick={() => this.refs.parallax.scrollTo(2)}>
-
+          <div className="page-2-text">
+            <div className="page-2-title">
+              <span className="page-2-title-text">OFF-ROAD & OVERLAND</span>
+            </div>
+            <div className="page-2-text1">
+              <span>THE ALL INCLUSIVE ADVENTURE TRAILER</span>
+            </div>
+            <div className="page-2-text2">
+              <span>MASSIVE STORAGE SPACE</span>
+            </div>
+            <div className="page-2-text2">
+              <span>INDEPENDENT OFF ROAD SUSPENSION</span>
+            </div>
+            <div className="page-2-text2">
+              <span>EASY FOLD OUT OVERLANDER TRAILER TENT</span>
+            </div>
+            <div className="page-2-text2">
+              <span>80 GALLON WATER TANK AND PUMP</span>
+            </div>
+            <div className="page-2-text2">
+              <span>SLIDE OUT SINK AND FOOD PREP STATION</span>
+            </div>
+            <div className="page-2-text2">
+              <span>HIDEAWAY DRAWER SPACE</span>
+            </div>
+          </div>
         </Parallax.Layer>
 
         <Parallax.Layer
