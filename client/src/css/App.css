@@ -334,6 +334,8 @@ a.register-link:hover {
 
 .page-2-text {
   width: 100%;
+  position: relative;
+  top: 45px;
 }
 
 .page-2-title {
@@ -383,6 +385,71 @@ a.register-link:hover {
   padding-left: 30px;
   font-weight: 100;
   margin: 5px 0;
+}
+
+.page-3-text {
+  position: absolute;
+  left: 0;
+  bottom: 40%;
+  width: 100%;
+  text-align: center;
+  z-index: 9999;
+}
+
+.page-3-title {
+  color: white;
+  background: #000000a6;
+  width: 1000px;
+  padding-right: 345px;
+  height: 105px;
+  line-height: initial;
+  padding-top: 10px;
+  clip-path: polygon(0 0, 75% 0%, 60% 225%, 0 100%);
+}
+
+.page-3-t1 {
+  font-size: 28px;
+  font-weight: 100;
+  font-family: 'Century Gothic', sans-serif;
+  text-align: right;
+}
+
+.page-3-t2 {
+  font-size: 35px;
+  text-align: right;
+  font-weight: 900;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.page-3-text2 {
+  color: white;
+  background: #000000a6;
+  width: 875px;
+  padding-right: 60px;
+  height: 50px;
+  line-height: initial;
+  padding-top: 10px;
+  clip-path: polygon(0 0, 75% 0%, 60% 225%, 0 100%);
+  font-size: 24px;
+  font-weight: 100;
+  font-family: 'Century Gothic', sans-serif;
+  margin-top: 10px;
+  padding-left: 78px;
+}
+.page-3-text3 {
+  color: white;
+  background: #000000a6;
+  width: 774px;
+  padding-right: 107px;
+  height: 50px;
+  line-height: initial;
+  padding-top: 10px;
+  clip-path: polygon(0 0, 75% 0%, 60% 225%, 0 100%);
+  font-size: 24px;
+  font-weight: 800;
+  font-family: 'Century Gothic', sans-serif;
+  margin-top: 10px;
+  padding-left: 100px;
 }
 
 /* Mobile */

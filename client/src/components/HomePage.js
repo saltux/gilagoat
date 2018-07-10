@@ -168,11 +168,29 @@ class HomePage extends Component {
         <Parallax.Layer
           className='hide-on-mobile'
           offset={2}
+          speed={0}
+          style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: '9999'
+          }}
+          onClick={() => this.refs.parallax.scrollTo(3)}>
+          <div className="page-3-text">
+            <div className="page-3-title">
+              <div className="page-3-t1">TAKE IT FOR A TEST DRIVE</div>
+              <div className="page-3-t2">RENT ONE TODAY</div>
+            </div>
+            <div className="page-3-text2">CALL NOW FOR DETAILS</div>
+            <div className="page-3-text3">833-445-2462</div>
+          </div>
+        </Parallax.Layer>
+        <Parallax.Layer
+          className='hide-on-mobile'
+          offset={2}
           speed={0.5}
           style={styles}
           onClick={() => this.refs.parallax.scrollTo(3)}>
 
         </Parallax.Layer>
+
 
         <Parallax.Layer
           className='hide-on-mobile'
