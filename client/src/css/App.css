@@ -305,7 +305,7 @@ a.register-link:hover {
   text-align: right;
   width: 180px;
   margin-left: auto;
-  margin-right: 35%;
+  margin-right: 38%;
 }
 
 .page1-main-text {
@@ -319,6 +319,7 @@ a.register-link:hover {
   overflow: hidden;
   white-space: nowrap;
   left: 46%;
+  padding: 2px 0;
 }
 
 .page-1-secondary-text {
@@ -328,7 +329,7 @@ a.register-link:hover {
   font-size: 27px;
   margin-top: 13px;
   font-family: 'Century Gothic', sans-serif;
-  top: 55px;
+  top: 60px;
   font-weight: 100;
 }
 
@@ -404,7 +405,7 @@ a.register-link:hover {
   height: 105px;
   line-height: initial;
   padding-top: 10px;
-  clip-path: polygon(0 0, 75% 0%, 60% 225%, 0 100%);
+  clip-path: polygon(0 0, 77% 0%, 50% 225%, 0 100%);
 }
 
 .page-3-t1 {
